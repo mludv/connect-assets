@@ -261,7 +261,7 @@ exports.cssCompilers = cssCompilers =
           .use(libs.bootstrap())
           .use(libs.nib())
           .use(libs.bootstrap())
-          .define('url', stylus.url({ paths: [__dirname + '/assets/img'] }))
+          .define('url', libs.stylus.url({ paths: [__dirname + '/assets/img'] }))
           .set('compress', @compress)
           .set('include css', true)
           .render callback
